@@ -22,14 +22,16 @@ About StreamCode
 This is our basic form of StreamCode. `A` is input process of stream. `B` is filter, and `C` is output process.   
 Stream should include at lease two process. The stream will be run following LTR(Left To Right) rule.
 
-### `[return]::A >> [param]:B`
+### `[return]::A >> [param]->B`
 `A` should return value to pipeline, so you can return value in [return] as writing variable name.   
 Also, `B` should load data from pipeline, so you can make parameter in [param] as writing variable name.
 *Rember, form of `[return]` should correspond with `[param]`*
 
 > #### example
 > ```
-> name::name = run input("What's your name?") >> name:run print("Hello, " + name)
+> name::name = run input("What's your name?") >> name->run print("Hello, " + name)
 > ```
+> you can also use this form like this:
+> `[return]::A >> [param]->[return]::B` => this stream return [return].
 
 #### We're developing more grammar. Stay tuned ;)
