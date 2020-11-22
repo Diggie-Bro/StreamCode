@@ -19,21 +19,37 @@ class Stream:
     def __init__(self, code: str):
         self.code = code
         self.stream = []
+        self.metadata = {}
     
     def makeStructure(self):
+        self.metadata = {
+            "variableStream": True if ":=" in self.code else False,
+            "vsName": self.code.split(":=")[0].strip() if ":=" in self.code else None
+        }
         codes = self.code.split(">>")
 
         # Stream structure
-        # { operation, param, return_value, order }
+        # { variableStream, vsName, operation, param, return_value, order, tag }
 
         for index, code in enumerate(codes):
             code.strip()
             self.stream.append({
-                "operation": code.split("::")[1] if "::" in code else (code.split("->")[1] if "->" in code else code),
-                "param": code.split("->")[0] if "->" in code else None,
+                "operation": code.split("::")[1].strip() if "::" in code else (code.split("->")[1].strip() if "->" in
+                    code else code.strip()),
+                "param": (
+                        code.split("|")[1].split("->")[0].strip() if "|" in code else code.split("->")[0].strip()
+                    ) if "->" in code else None,
                 "return_value": (
-                        code.split("::")[0].split("->")[1] if "->" in code else code.split("::")[0]
+                        code.split("::")[0].split("->")[1].strip() if "->" in code else (
+                            code.split("::")[0].split("|")[1].strip() if "|" in code else (
+                                code.split("::")[0].split(":=")[1].strip() if ":=" in code else
+                                code.split("::")[0].strip()
+                            )
+                        )
                     ) if "::" in code else None,
-                "order": index
+                "order": index,
+                "tag": (
+                        code.split(":=")[1].split("|")[0].strip() if ":=" in code else code.split("|")[0].strip()
+                    ) if "|" in code else None
             })
 
