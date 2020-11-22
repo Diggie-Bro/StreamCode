@@ -1,4 +1,24 @@
 
+startline
+IS_VARIABLE_STREAM True
+VARIABLE_STREAM_NAME hello_name
+        
+startstream 0|None
+PARAM hello_name := name
+RETURN filtered_name
+PERFORM filtered_name = "Hello, " + name
+endstream
+            
+startstream 1|None
+PARAM filtered_name
+RETURN None
+PERFORM run print(filtered_name)
+endstream
+            endline
+startline
+IS_VARIABLE_STREAM False
+VARIABLE_STREAM_NAME None
+        
 startstream 0|None
 PARAM None
 RETURN name
@@ -6,8 +26,8 @@ PERFORM name = run input("What's your name?")
 endstream
             
 startstream 1|None
-PARAM name
+PARAM None
 RETURN None
-PERFORM run print("Hello, " + name)
+PERFORM hello_name
 endstream
-            
+            endline

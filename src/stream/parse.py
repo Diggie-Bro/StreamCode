@@ -13,8 +13,15 @@ class Generator:
         self.tgpath = targetpath
         self.cdpath = codepath
 
-    def convertStructToParse(self, structs):
-        string = ""
+    def convertStructToParse(self, structs, meta):
+        string = """
+startline
+IS_VARIABLE_STREAM {isvs}
+VARIABLE_STREAM_NAME {vsname}
+        """.format(
+                isvs=meta['variableStream'],
+                vsname=meta['vsName']
+        )
 
         for struct in structs:
             string += """
@@ -31,17 +38,20 @@ endstream
                     tag=struct['tag']
             )
 
+        string += "endline"
+
         return string
 
     def generateParsedFile(self):
         parsed_string = ""
 
         with open(self.cdpath, 'r') as f:
-            strm = stream.Stream(f.read().replace("\n", ""))
-            strm.makeStructure()
+            for linecode in f.readlines():
+                strm = stream.Stream(linecode.replace("\n", ""))
+                strm.makeStructure()
 
-            # parsing
-            parsed_string = self.convertStructToParse(strm.stream)
+                # parsing
+                parsed_string += self.convertStructToParse(strm.stream, strm.metadata)
 
         with open(self.tgpath, 'w') as f:
             f.write(parsed_string)
