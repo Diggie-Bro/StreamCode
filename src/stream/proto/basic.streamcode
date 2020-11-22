@@ -1,0 +1,1 @@
+name::name = run input("What's your name?") >> name->run print("Hello, " + name)

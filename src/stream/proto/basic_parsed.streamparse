@@ -1,0 +1,13 @@
+
+startstream 0|None
+PARAM None
+RETURN name
+PERFORM name = run input("What's your name?")
+endstream
+            
+startstream 1|None
+PARAM name
+RETURN None
+PERFORM run print("Hello, " + name)
+endstream
+            

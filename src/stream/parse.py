@@ -18,25 +18,26 @@ class Generator:
 
         for struct in structs:
             string += """
-            startstream {order}
-            PARAM {param}
-            RETURN {return_value}
-            PERFORM {perform}
-            endstream
+startstream {order}|{tag}
+PARAM {param}
+RETURN {return_value}
+PERFORM {perform}
+endstream
             """.format(
                     order=struct['order'],
                     param=struct['param'],
                     return_value=struct['return_value'],
-                    perform=struct['operation']
+                    perform=struct['operation'],
+                    tag=struct['tag']
             )
-            
+
         return string
 
     def generateParsedFile(self):
         parsed_string = ""
 
         with open(self.cdpath, 'r') as f:
-            strm = stream.Stream(f.read())
+            strm = stream.Stream(f.read().replace("\n", ""))
             strm.makeStructure()
 
             # parsing

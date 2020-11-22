@@ -1,37 +1,45 @@
-# 🛠 The Frog Programming Languag Prototype
-
-Prototype StreamCode
----
+# The StreamCode Programming Language 
 
 <img src="https://img.shields.io/badge/process-Prototyping-red">
 <a href="https://github.com/Diggie-Bro/Frog-Prototype-StreamCode/actions/"><img src="https://img.shields.io/badge/build-pass-green"></a>
 <a href="https://www.python.org"><img src="https://img.shields.io/badge/language->=python3.5-blue"></a>
 <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-pink"></a>
-<a href="https://github.com/Diggie-Bro"><img src="https://img.shields.io/badge/DiggieBro-white"></a>
-<div align="center">
-    <img src="https://raw.githubusercontent.com/Diggie-Bro/Frog-prototype-CommandCode/master/img/FrogSungyi.png"/>  
-    <p>StreamCode is basic grammar of Froglang. It was inspired by <strong>C++</strong>'s stream, and <a href="https://github.com/matz/streem">matz's Streem PL</a></p>
-    <blockquote><p><strong>This prototype is under of Froglang, so it'll follow Froglang
-    Grammar.</strong></p></blockquote>
-</div>
 
-About StreamCode
----
+![icon](./frogstream.png)  
+StreamCode is open-source programming language that it is **Stream-friendly** and simple to use.
 
+## About StreamCode
+### Basic Stream From
 ### `A >> B >> C`
 This is our basic form of StreamCode. `A` is input process of stream. `B` is filter, and `C` is output process.   
 Stream should include at lease two process. The stream will be run following LTR(Left To Right) rule.
 
+---
+
 ### `[return]::A >> [param]->B`
 `A` should return value to pipeline, so you can return value in [return] as writing variable name.   
 Also, `B` should load data from pipeline, so you can make parameter in [param] as writing variable name.
-*Rember, form of `[return]` should correspond with `[param]`*
+**Remember, form of `[return]` should correspond with `[param]`**
 
 > #### example
-> ```
-> name::name = run input("What's your name?") >> name->run print("Hello, " + name)
-> ```
+```
+name::name = run input("What's your name?") >> name->run print("Hello, " + name)
+```
 > you can also use this form like this:
 > `[return]::A >> [param]->[return]::B` => this stream return [return].
 
-#### We're developing more grammar. Stay tuned ;)
+---
+
+### `A >> B >> [tag]|C`
+In this stream, process `C`'s name is [tag]. So, if you want to use process C again, you can just write like this.  
+
+`A >> B >> [tag]|C >> [tag]`  
+
+It'll work well, but **Remember, this tag doesn't have C's param and return.** You should write `[param] and [return]`. 
+It is very important to StreamCode, because this formation'll be used in **IF and LOOP**
+
+> #### tip
+> General Form of Process: `[tag]|[param]->[return]::[operation]`  
+> General Form of Stream: `[tag]|[return]::A >> [tag]|[param]->[return]::B >> [tag]|[param]->[return]::C`
+
+---
