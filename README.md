@@ -42,7 +42,9 @@ It is very important to StreamCode, because this formation'll be used in **IF an
 > General Form of Process: `[tag]|[param]->[return]::[operation]`  
 > General Form of Stream: `[tag]|[return]::A >> [tag]|[param]->[return]::B >> [tag]|[param]->[return]::C`
 
-### (advanced) `[streamname] := [param]->[return]::A >> [param]->[return]::B >> [param]->[return]::C`
+---
+
+##### (advanced) `[streamname] := [param]->[return]::A >> [param]->[return]::B >> [param]->[return]::C`
 You can save stream to variable stream. Also you can load that stream in another stream like `A >> [streamname] >> B`. 
 When you save stream to variable, the first process should have `[param]->[return]`, like **function**.
 
