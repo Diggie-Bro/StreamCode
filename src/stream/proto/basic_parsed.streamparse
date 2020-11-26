@@ -4,7 +4,7 @@ IS_VARIABLE_STREAM True
 VARIABLE_STREAM_NAME hello_name
         
 startstream 0|None
-PARAM hello_name := name
+PARAM name
 RETURN filtered_name
 PERFORM filtered_name = "Hello, " + name
 endstream
@@ -16,8 +16,8 @@ PERFORM run print(filtered_name)
 endstream
             endline
 startline
-IS_VARIABLE_STREAM False
-VARIABLE_STREAM_NAME None
+IS_VARIABLE_STREAM True
+VARIABLE_STREAM_NAME main
         
 startstream 0|None
 PARAM None

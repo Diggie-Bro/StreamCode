@@ -33,11 +33,17 @@ class Stream:
 
         for index, code in enumerate(codes):
             code.strip()
+
+            # string obfuscation not to confuse during parsing.
+            # :TODO declare function
+
             self.stream.append({
                 "operation": code.split("::")[1].strip() if "::" in code else (code.split("->")[1].strip() if "->" in
                     code else code.strip()),
                 "param": (
-                        code.split("|")[1].split("->")[0].strip() if "|" in code else code.split("->")[0].strip()
+                        code.split("|")[1].split("->")[0].strip() if "|" in code else (
+                            code.split(":=")[1].split("->")[0].strip() if ":=" in code else code.split("->")[0].strip()
+                        )
                     ) if "->" in code else None,
                 "return_value": (
                         code.split("::")[0].split("->")[1].strip() if "->" in code else (

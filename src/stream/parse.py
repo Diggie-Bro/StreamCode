@@ -46,7 +46,7 @@ endstream
         parsed_string = ""
 
         with open(self.cdpath, 'r') as f:
-            for linecode in f.readlines():
+            for linecode in f.read().strip().split(";")[:-1]:
                 strm = stream.Stream(linecode.replace("\n", ""))
                 strm.makeStructure()
 
