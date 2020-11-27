@@ -6,6 +6,8 @@ Stream Structure Object File
 
 Mention @Diggie-Bro/froglang for any help!
 """
+import re
+import string_obfuscation as strobfus
 
 """
 Stream Class
@@ -33,10 +35,20 @@ class Stream:
 
         for index, code in enumerate(codes):
             code.strip()
-
+            
             # string obfuscation not to confuse during parsing.
-            # :TODO declare function
-
+            # string only support ", not '
+            stringRangeIndex: int = None
+            
+            for i, char in enumerate(code):
+                if char == '"':
+                    if stringRangeIndex != None:
+                        stringPart = code[stringRangeIndex + 1: i]
+                        code = code.replace(stringPart, strobfus.encode(stringPart))
+                        stringRangeIndex = None
+                    else:
+                        stringRangeIndex = i
+            
             self.stream.append({
                 "operation": code.split("::")[1].strip() if "::" in code else (code.split("->")[1].strip() if "->" in
                     code else code.strip()),
