@@ -1,2 +1,5 @@
-hello_name := name->filtered_name::filtered_name = "Hello, " + name >> filtered_name->run print(filtered_name);
+hello_name := name->filtered_name::{
+    filtered_name = "Hello, " + name
+    filtered_name += "Nice to meet you!"
+}>> filtered_name->run print(filtered_name);
 main := name::name = run input("What's your name?") >> hello_name;

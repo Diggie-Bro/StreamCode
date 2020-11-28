@@ -7,6 +7,7 @@ Stream Structure Object File
 Mention @Diggie-Bro/froglang for any help!
 """
 import re
+import keywords
 import string_obfuscation as strobfus
 
 """
@@ -38,9 +39,23 @@ class Stream:
             
             # string obfuscation not to confuse during parsing.
             # string only support ", not '
+            # multiline support, too
             stringRangeIndex: int = None
+            braceRangeIndex: int = None
+
+            for i, char in enumerate(list(code)):
+                if char == '{':
+                    if braceRangeIndex == None:
+                        braceRangeIndex = i
+                elif char == '}':
+                    # suppose grammar is right.
+                    if braceRangeIndex != None:
+                        multilPart = code[braceRangeIndex + 1: i]
+                        multilPart_edited = multilPart.replace("\n", keywords.dummy_keyword["MULTILENTER"]).strip()
+                        code = code.replace(multilPart, multilPart_edited)
+                        braceRangeIndex = None
             
-            for i, char in enumerate(code):
+            for i, char in enumerate(list(code)):
                 if char == '"':
                     if stringRangeIndex != None:
                         stringPart = code[stringRangeIndex + 1: i]
@@ -48,7 +63,7 @@ class Stream:
                         stringRangeIndex = None
                     else:
                         stringRangeIndex = i
-            
+
             self.stream.append({
                 "operation": code.split("::")[1].strip() if "::" in code else (code.split("->")[1].strip() if "->" in
                     code else code.strip()),

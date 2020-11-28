@@ -16,5 +16,6 @@ stream_keyword = {
 }
 
 dummy_keyword = {
-        "OBFUSSTRING": "&#$@@@"
+        "OBFUSSTRING": "&#$@@@",
+        "MULTILENTER": "&#$###"
 }

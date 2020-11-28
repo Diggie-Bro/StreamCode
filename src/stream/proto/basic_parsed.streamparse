@@ -6,7 +6,7 @@ VARIABLE_STREAM_NAME hello_name
 startstream 0|None
 PARAM name
 RETURN filtered_name
-PERFORM filtered_name = "Hello, " + name
+PERFORM {&#$###filtered_name = "Hello, " + name&#$###filtered_name += "Nice to meet you!"&#$###}
 endstream
             
 startstream 1|None
