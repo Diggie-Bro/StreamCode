@@ -1,4 +1,3 @@
-
 startline
 IS_VARIABLE_STREAM True
 VARIABLE_STREAM_NAME hello_name
@@ -6,7 +5,7 @@ VARIABLE_STREAM_NAME hello_name
 startstream 0|None
 PARAM name
 RETURN filtered_name
-PERFORM {&#$###filtered_name = "Hello, " + name&#$###filtered_name += "Nice to meet you!"&#$###}
+PERFORM {&#$###filtered_name = "72&#$@@@101&#$@@@108&#$@@@108&#$@@@111&35&#$@@@36&#$@@@64&#$@@@64&#$@@@64&#$@@@52&#$@@@52&#$@@@38&#$@@@35&#$@@@36&#$@@@64&#$@@@64&#$@@@64&#$@@@51&#$@@@50&#$@@@34&#$@@@32+ name&#$###filtered_name += "Nice to meet you!"&#$###}
 endstream
             
 startstream 1|None
@@ -14,15 +13,14 @@ PARAM filtered_name
 RETURN None
 PERFORM run print(filtered_name)
 endstream
-            endline
-startline
+            endlinestartline
 IS_VARIABLE_STREAM True
 VARIABLE_STREAM_NAME main
         
 startstream 0|None
 PARAM None
 RETURN name
-PERFORM name = run input("What's your name?")
+PERFORM name = run input("87&#$@@@104&#$@@@97&#$@@@116&#$@@@39&#$@@@115&#$@@@32&#$@@@121&#$@@@111&#$@@@117&#$@@@114&#$@@@32&#$@@@110&#$@@@97&#$@@@109&#$@@@101&#$@@@63")
 endstream
             
 startstream 1|None
