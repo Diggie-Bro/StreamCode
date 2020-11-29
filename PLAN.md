@@ -4,7 +4,7 @@
 
 |✅|75% :octocat:||0% :octocat:|||
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|**Start**|L1 parser|L2 parser *(only for PERFORM. See [stream.py](./src/stream/stream.py))*|syntax checker|runtime|**Release**|
+|**Start**|L1 parser|L2 parser *(only for PERFORM. See [stream.py](./src/stream/parser/stream.py))*|syntax checker|runtime|**Release**|
 
 ✅ : Finished  
 :octocat: : Working  

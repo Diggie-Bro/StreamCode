@@ -7,4 +7,9 @@ Stream Github CI Action Test file.
 Mention @Diggie-Bro/froglang for any help!
 """
 
+# L1 parser
+from .parser import parse
+
+parse.Generator()
+
 
