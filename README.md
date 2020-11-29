@@ -18,7 +18,8 @@ Read [wiki](https://github.com/Diggie-Bro/StreamCode/wiki) to start.
 |:octocat: Release Environment|>=python3.6|
 
 ## Contributing
-Read [CONTRIBUTING.md]() to contribute
+Read [CONTRIBUTING.md](./CONTRIBUTING.md) to contribute
+For development process/plan, see [PLAN.md](./PLAN.md)
 
 ## Authors
 |user|role|
