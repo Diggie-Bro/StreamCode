@@ -2,10 +2,14 @@
 
 ### From none to **STABLE 1**
 
-|✅|75% :octocat:(Python to C++)||0% :octocat:|||
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|**Start**|L1 parser|L2 parser *(only for PERFORM. See [stream.py](./src/stream/stream.py))*|syntax checker|runtime|**Release**|
+- core: :octocat: 10%
+- syntax: ☑️
+- parser: ☑️
+- bytecode generator: ☑️
+- runtime: ☑️
+- release: ☑️
 
 ✅ : Finished  
 :octocat: : Working  
-blank : Not working  
+☑️  : Not working
+

@@ -5,7 +5,7 @@
 <a href="https://www.python.org"><img src="https://img.shields.io/badge/language->=python3.6-blue"></a>
 <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-pink"></a>
 
-![icon](./frogstream.png)  
+![icon](./stream.png)  
 StreamCode is open-source programming language that it is **Stream-friendly** and simple to use.
 
 ## Getting Started
