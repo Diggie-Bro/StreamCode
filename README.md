@@ -14,8 +14,8 @@ Read [wiki](https://github.com/Diggie-Bro/StreamCode/wiki) to start.
 ## Deployment
 |Environment|Deployment|
 |------------------------------|---------|
-|:atom: Development Environment|python3.8|
-|:octocat: Release Environment|>=python3.6|
+|:atom: Development Environment|C++11|
+|:octocat: Release Environment|>=C++11|
 
 ## Contributing
 Read [CONTRIBUTING.md](./CONTRIBUTING.md) to contribute  
