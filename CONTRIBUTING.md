@@ -64,7 +64,7 @@ Developer: <user>
 We think Pull Requests is the best way to contribute. Here is some tips to be accepted.
 
 - Is that **available** code? (if we think this code is unstable, review can be longer)
-- Is code consistent with Standard Coading Style *(PEP8)*?
+- Is code consistent with Standard Coading Style?
 - Does code have reasons to change?
 - All code is consist of only English without *translate* tag? (we will reject all your translation version without tag)
 
