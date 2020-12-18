@@ -34,17 +34,20 @@ class Stream {
         Process* proc_node_;  // process node. Never NULL
         string strm_name_;  // stream name. just option
 
+        // connnect proc_n to proc_node (push)
         void ConnectProc(Process* proc_n) {
             proc_node_->proc_next = proc_n;
         }
 };
 
+// streamcode class
 class StreamCode {
     public:
         Stream* strm_node_;  // stream node
         // :TODO module importer
         string file_name_;  // file name
 
+        // connect strm_n to strm_node_ (push)
         void ConnectStrm(Stream* strm_n) {
             strm_node_->strm_node_next_ = strm_n;
         }

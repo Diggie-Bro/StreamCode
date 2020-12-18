@@ -54,12 +54,18 @@ struct PerformFunction {
 // please visit wiki for more detail.
 
 
-// process structure
-struct Process {
-    Process* proc_next;  // next process node
-    string tag_;  // tag
-    vector<Variables> in_pipeline_;  // parameter
-    vector<Variables> out_pipeline_;  // return value
-    PerformFunction* perf_func_node_;  // perform node pointer
+// process class
+class Process {
+    public:
+        Process* proc_next;  // next process node
+        string tag_;  // tag
+        vector<Variables> in_pipeline_;  // parameter
+        vector<Variables> out_pipeline_;  // return value
+        PerformFunction* perf_func_node_;  // perform node pointer
+        
+        // connect perf_func_n to perf_func_node_ (push)
+        void ConnectPerform(PerformFunction* perf_func_n) {
+            perf_func_node_->perf_func_next_ = perf_func_n;
+        }
 };
 #endif
