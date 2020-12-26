@@ -13,7 +13,8 @@
 #define STREAM_HEADER
 
 // include header
-#include "process.h"
+#include "./process.h"
+#include "../module/importer.h"
 #include <vector>
 
 // basic namespace 
@@ -44,7 +45,7 @@ class Stream {
 class StreamCode {
     public:
         Stream* strm_node_;  // stream node
-        // :TODO module importer
+        Importer* module_importer_;  // module importer
         string file_name_;  // file name
 
         // connect strm_n to strm_node_ (push)

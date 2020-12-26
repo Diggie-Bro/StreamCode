@@ -20,12 +20,13 @@ using namespace std;
 
 // types enum
 //
-// in streamcode, we support integer, double, string, and bool types.
+// in streamcode, we support integer, double, string, and bool types(void too).
 enum Types {
     INT,
     DOUBLE,
     STRING,
     BOOL,
+    VOID,
 };
 
 

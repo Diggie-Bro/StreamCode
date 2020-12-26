@@ -1,0 +1,7 @@
+/!/ configure file
+
+version := 1.0.0
+name := io
+author := RedoC
+dirpath := ./
+description := I/O built-in module

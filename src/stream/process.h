@@ -59,8 +59,8 @@ class Process {
     public:
         Process* proc_next;  // next process node
         string tag_;  // tag
-        vector<Variables> in_pipeline_;  // parameter
-        vector<Variables> out_pipeline_;  // return value
+        vector<struct Variables> in_pipeline_;  // parameter
+        vector<struct Variables> out_pipeline_;  // return value
         PerformFunction* perf_func_node_;  // perform node pointer
         
         // connect perf_func_n to perf_func_node_ (push)
