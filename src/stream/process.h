@@ -41,9 +41,10 @@ enum Operators {
 // perform function structure
 // perform function is the ds of line of perform code.
 struct PerformFunction {
+    Operators oper_; // operator
     PerformFunction* perf_func_next_;  // next perform function
-    Operators oper_;  // operator
-    vector<string> param_;  // parameter vector
+    string perform_func_name_;  // perform function's name 
+    vector<struct Variables> param_;  // parameter vector
 };
 
 // process

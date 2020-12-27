@@ -1,2 +1,2 @@
 import io;
-main := ("hello world")=>(input);
+main := ("hello world")=>(print);
