@@ -2,7 +2,7 @@
 
 <a><img src="https://img.shields.io/badge/process-Prototyping-red"></a>
 <a href="https://github.com/Diggie-Bro/Frog-Prototype-StreamCode/actions/"><img src="https://img.shields.io/badge/build-no CI-green"></a>
-<a href="https://www.python.org"><img src="https://img.shields.io/badge/language->=python3.6-blue"></a>
+<a href="https://www.cplusplus.com"><img src="https://img.shields.io/badge/language->=C++-blue"></a>
 <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-pink"></a>
 
 ![icon](./stream.png)  
