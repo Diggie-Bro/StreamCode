@@ -11,6 +11,11 @@ StreamCode is open-source programming language that it is **Stream-friendly** an
 ## Getting Started
 Read [wiki](https://github.com/Diggie-Bro/StreamCode/wiki) to start.
 
+## Build
+Use `make` command to build.
+> Makefile is for prototype now, so it will build the lastest prototype **test/hello_world.cpp**.  
+> If you wanna to see other prototypes of previous prototypes, please visit **misc** directory.
+
 ## Contributing
 Read [CONTRIBUTING.md](./CONTRIBUTING.md) to contribute  
 For development process/plan, see [PLAN.md](./PLAN.md)
