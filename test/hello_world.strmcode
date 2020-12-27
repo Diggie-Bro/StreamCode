@@ -1,0 +1,2 @@
+import io;
+main := ("hello world")=>(input);

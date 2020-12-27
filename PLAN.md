@@ -2,7 +2,7 @@
 
 ### From none to **STABLE 1**
 
-- core: :octocat: 10%
+- core: :octocat: 50%
 - syntax: ☑️
 - parser: ☑️
 - bytecode generator: ☑️

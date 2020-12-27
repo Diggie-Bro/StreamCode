@@ -11,12 +11,6 @@ StreamCode is open-source programming language that it is **Stream-friendly** an
 ## Getting Started
 Read [wiki](https://github.com/Diggie-Bro/StreamCode/wiki) to start.
 
-## Deployment
-|Environment|Deployment|
-|------------------------------|---------|
-|:atom: Development Environment|C++11|
-|:octocat: Release Environment|>=C++11|
-
 ## Contributing
 Read [CONTRIBUTING.md](./CONTRIBUTING.md) to contribute  
 For development process/plan, see [PLAN.md](./PLAN.md)
