@@ -5,28 +5,46 @@
 <a href="https://www.cplusplus.com"><img src="https://img.shields.io/badge/language->=C++-blue"></a>
 <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-pink"></a>
 
-![icon](./stream.png)  
 StreamCode is open-source programming language that it is **Stream-friendly** and simple to use.
+<br>
+<hr>
+<img src="./stream.png" height=270 align="right" hspace="30px" vspace="30px">
 
-## Getting Started
+ - C++  
+
+``` cpp
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "hello world";
+}
+```
+
+- **StreamCode**
+``` javascript 
+import io;
+main := ("hello world")=>(print);
+```
+
+## :tada: Getting Started
 Read [wiki](https://github.com/Diggie-Bro/StreamCode/wiki) to start.
 
-## Build
+## :rocket: Build
 Use `make` command to build.
 > Makefile is for prototype now, so it will build the lastest prototype **test/hello_world.cpp**.  
 > If you wanna to see other prototypes of previous prototypes, please visit **misc** directory.
 
-## Contributing
+## :eyes: Contributing
 Read [CONTRIBUTING.md](./CONTRIBUTING.md) to contribute  
 For development process/plan, see [PLAN.md](./PLAN.md)
 
-## Authors
+## :octocat: Authors
 |user|role|
 |----|----|
 |**Redoc**|StreamCode Development Leader|
 
-## License
+## :fax: License
 This Project is under [MIT license](./LICENSE).
 
-## Note
+## :memo: Note
 > This language doesn't work yet. Stay tuned.
