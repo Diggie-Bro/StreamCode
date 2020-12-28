@@ -5,8 +5,13 @@
 <a href="https://www.cplusplus.com"><img src="https://img.shields.io/badge/language->=C++-blue"></a>
 <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-pink"></a>
 
-![icon](./stream.png)  
+<img src="./stream.png" width=500 height=500>
 StreamCode is open-source programming language that it is **Stream-friendly** and simple to use.
+
+```
+import io;
+main := ("hello_world")=>(print);
+```
 
 ## Getting Started
 Read [wiki](https://github.com/Diggie-Bro/StreamCode/wiki) to start.
