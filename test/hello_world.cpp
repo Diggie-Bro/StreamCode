@@ -1,7 +1,7 @@
-#include <iostream>
 #include <vector>
+#include <string>
 #include "../misc/headerimport.h"
-
+using namespace std;
 /*
  * import io;
  * main := ("hello world")=>(print);
@@ -46,5 +46,9 @@ int main() {
         "hello_world.strmcode",
     };
 
-    importer.executeIO(print_func.perform_func_name_, print_func.param_);
+    Executor exec_ = {
+        code
+    };
+
+    exec_.executeCode();
 }
