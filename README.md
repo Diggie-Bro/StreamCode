@@ -30,7 +30,8 @@ main := ("hello world")=>(print);
 Read [wiki](https://github.com/Diggie-Bro/StreamCode/wiki) to start.
 
 ## :rocket: Build
-Use `make` command to build.
+Use `make` command to build.  
+To uninstall, use `make clean` command.
 > Makefile is for prototype now, so it will build the lastest prototype **test/hello_world.cpp**.  
 > If you wanna to see other prototypes of previous prototypes, please visit **misc** directory.
 
