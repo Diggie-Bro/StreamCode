@@ -36,4 +36,13 @@ struct Variables {
     string value;
 };
 
+// memory structure
+struct VariableMem {
+    Types type;
+    int* integerMem;
+    double* doubleMem;
+    char** stringMem;
+    bool* booleanMem;
+};
+
 #endif
