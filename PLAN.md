@@ -2,11 +2,11 @@
 
 ### From none to **STABLE 1**
 
-- core: :octocat: 50%
+- core: :octocat: 70%
 - syntax: ☑️
 - parser: ☑️
 - bytecode generator: ☑️
-- runtime: ☑️
+- runtime: :octocat: 20%
 - release: ☑️
 
 ✅ : Finished  
