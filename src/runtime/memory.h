@@ -14,7 +14,6 @@
 
 // include header
 #include <cstdlib>
-#include <malloc/malloc.h>
 #include <string>
 #include "../stream/type.h"
 
