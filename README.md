@@ -5,7 +5,7 @@
 <a href="https://www.cplusplus.com"><img src="https://img.shields.io/badge/language->=C++-blue"></a>
 <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-pink"></a>
 
-StreamCode is open-source programming language that it is **Stream-friendly** and simple to use.
+StreamCode is an open-source programming language that is **Stream-friendly** and simple to use.
 <br>
 <hr>
 <img src="./stream.png" height=270 align="right" hspace="30px" vspace="30px">
