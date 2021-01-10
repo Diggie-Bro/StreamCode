@@ -41,7 +41,7 @@ struct VariableMem {
     Types type;
     int* integerMem;
     double* doubleMem;
-    char** stringMem;
+    string* stringMem;
     bool* booleanMem;
 };
 

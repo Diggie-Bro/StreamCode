@@ -17,3 +17,4 @@
 #include "../src/stream/stream.h"
 #include "../src/stream/type.h"
 #include "../src/runtime/execute.h"
+#include "../src/runtime/memory.h"
