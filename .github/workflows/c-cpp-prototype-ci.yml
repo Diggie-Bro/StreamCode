@@ -16,4 +16,4 @@ jobs:
     - name: make
       run: make
     - name: run
-      run: ./hello_world_test
+      run: ./ci_test
