@@ -27,6 +27,7 @@ enum Types {
     STRING,
     BOOL,
     VOID,
+    VARIABLE,
 };
 
 
@@ -39,10 +40,11 @@ struct Variables {
 // memory structure
 struct VariableMem {
     Types type;
-    int* integerMem;
-    double* doubleMem;
-    char** stringMem;
-    bool* booleanMem;
+    string varname;
+    int integerMem;
+    double doubleMem;
+    string stringMem;
+    bool booleanMem;
 };
 
 #endif

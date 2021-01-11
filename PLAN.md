@@ -13,3 +13,9 @@
 :octocat: : Working  
 ☑️  : Not working
 
+
+# To-Do List
+
+- Error system
+- Syntax checker....
+- EN improve.

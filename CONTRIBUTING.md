@@ -18,7 +18,7 @@ You can contribute to three-way: **Issue(Bug, New feature)**, **Pull Request**, 
 - question
 - newLabel
 - wiki
-
+- outdated
 
 If you need more, please make an issue with 'newLabel.'
 ## Issue Bug
