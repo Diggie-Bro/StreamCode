@@ -43,8 +43,8 @@ enum Operators {
 struct PerformFunction {
     Operators oper_; // operator
     PerformFunction* perf_func_next_;  // next perform function
-    string perform_func_name_;  // perform function's name 
-    vector<struct Variables> param_;  // parameter vector
+    string perform_func_name_;  // perform function's name (only use CALLFUNC) 
+    vector<struct Variables> param_;  // parameter vector (for assign, use [A, B] to represent A = B
 };
 
 // process
