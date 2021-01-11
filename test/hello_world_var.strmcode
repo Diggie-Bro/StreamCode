@@ -1,0 +1,5 @@
+import io;
+main := { 
+    name = "dummy"
+    (name)=>(print);
+}
