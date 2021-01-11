@@ -8,6 +8,9 @@ We'll always be happy to review your PR and Forks.
 You can contribute to three-way: **Issue(Bug, New feature)**, **Pull Request**, and **Comment**.
 
 ## [Tag List](https://github.com/Diggie-Bro/Frog/labels)
+- PR:development
+- PR:typo
+- PR:other
 - translate
 - bug
 - documentation
@@ -20,7 +23,9 @@ You can contribute to three-way: **Issue(Bug, New feature)**, **Pull Request**, 
 - wiki
 - outdated
 
+**Use more than one tag has "PR" mark when you're making Pull Requests.**
 If you need more, please make an issue with 'newLabel.'
+
 ## Issue Bug
 You can report a bug by the issue template. I recommend using the issue tag `bug`. Your report should have an error log and before and after errors.
 **Remember, your issues can be answered by the team after a long time. Please understand.**
@@ -31,6 +36,7 @@ You can suggest a new feature by the issue template. In this case, use the issue
 
 ## Pull Request
 PR is very easy! Just attach a suitable tag, and open it! We are welcome your PR to satisfy all checklists.
+**Remember**, Use more than one tag has "PR" mark when you're making Pull Requests.
 
 ### About comment
 We have the rule of the comment. Please follow this structure. The best is to review our code file.
