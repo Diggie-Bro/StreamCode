@@ -11,6 +11,7 @@
 
 #ifndef RUNTIME_EXECUTE_HEADER
 #define RUNTIME_EXECUTE_HEADER
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -43,10 +44,19 @@ class Executor {
                     while (true) {
                         Operators oper_ = node_perf->oper_;
                         if (oper_ == ASSIGN && node_perf->param_.size() == 2) {
-                            struct Variables& variable = node_perf->param_[0];
-                            struct Variables& expression = node_perf->param_[1];
-                            struct VariableMem new_variable = varmanger_.declareVariable(variable, expression);
-                            varStack_.push_back(&new_variable);
+                            bool isMade = false;
+                            for (int i = 0; i < varStack_.size(); i++) {
+                                if (node_perf->param_[0].value == varStack_[i]->varname) {
+                                    struct Variables& variable = node_perf->param_[1];
+                                    varmanger_.editVariable(varStack_[i], variable);
+                                }
+                            }
+                            if (!isMade) {
+                                struct Variables& variable = node_perf->param_[0];
+                                struct Variables& expression = node_perf->param_[1];
+                                struct VariableMem new_variable = varmanger_.declareVariable(variable, expression);
+                                varStack_.push_back(&new_variable);
+                            }
                         }
                         else if (oper_ == CALLFUNC) {
                             for (int i = 0; i < node_perf->param_.size(); i++) {
@@ -62,7 +72,6 @@ class Executor {
                         } else if (oper_ == RETURN) {
                             // :TODO return
                         }
-
                         if (NULL == node_perf->perf_func_next_) break;
                         node_perf = node_perf->perf_func_next_;
                     }
