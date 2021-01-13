@@ -42,9 +42,10 @@ For development process/plan, see [PLAN.md](./PLAN.md)
 |user|role|
 |----|----|
 |**Redoc**|StreamCode Development Leader|
+|**Sungyi**|StreamCode Maintain Leader|
 
 ## :fax: License
-This Project is under [MIT license](./LICENSE).
+This Project is under [Apache 2.0 License](./LICENSE).
 
 ## :memo: Note
 > This language doesn't work yet. Stay tuned.
