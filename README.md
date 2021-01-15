@@ -1,5 +1,7 @@
 # The StreamCode Programming Language 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/faaf4d8738f54ce5940b5ee800bed1a3)](https://app.codacy.com/gh/Diggie-Bro/StreamCode?utm_source=github.com&utm_medium=referral&utm_content=Diggie-Bro/StreamCode&utm_campaign=Badge_Grade)
+
 <a><img src="https://img.shields.io/badge/process-Prototyping-red"></a>
 <a href="https://travis-ci.com/github/Diggie-Bro/StreamCode"><img src="https://travis-ci.com/Diggie-Bro/StreamCode.svg?branch=main"></a>
 <a href="https://www.cplusplus.com"><img src="https://img.shields.io/badge/language->=C++-blue"></a>
