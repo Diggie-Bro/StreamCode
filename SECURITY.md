@@ -2,20 +2,15 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Our language was developed in clang, but gcc will work well.
+Use STD upper than C++11. You can use Makefile, without any setting.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| C++11   | :white_check_mark: |
+| < C++11 | :x:                |
 
 ## Reporting a Vulnerability
+Make a PR with tag 'vulnerability'. It's ok to make the issue, but please use pull request system.  
+Thank you.
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
