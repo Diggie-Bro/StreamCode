@@ -2,7 +2,7 @@ language: cpp
 install: make
 compiler: clang
 script:
-    - make
+    - ./ci_test
 after_success:
     - bash <(curl -s https://codecov.io/bash)
     - make clean
