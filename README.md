@@ -1,7 +1,7 @@
 # The StreamCode Programming Language 
 
 <a><img src="https://img.shields.io/badge/process-Prototyping-red"></a>
-<a href="https://github.com/Diggie-Bro/Frog-Prototype-StreamCode/actions/"><img src="https://img.shields.io/badge/protobuild-pass-green"></a>
+<a href="https://travis-ci.com/github/Diggie-Bro/StreamCode"><img src="https://travis-ci.com/Diggie-Bro/StreamCode.svg?branch=main"></a>
 <a href="https://www.cplusplus.com"><img src="https://img.shields.io/badge/language->=C++-blue"></a>
 <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-Apache 2.0-pink"></a>
 
