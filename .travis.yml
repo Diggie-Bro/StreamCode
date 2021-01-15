@@ -1,0 +1,8 @@
+language: cpp
+install: make
+compiler: clang
+script:
+    - ./ci_test
+after_success:
+    - bash <(curl -s https://codecov.io/bash) -t 2a25ef2a-ddf9-40e4-bbf7-0610151c6386 
+    - make clean
