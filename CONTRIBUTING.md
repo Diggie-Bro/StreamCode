@@ -22,6 +22,7 @@ You can contribute to three-way: **Issue(Bug, New feature)**, **Pull Request**, 
 - newLabel
 - wiki
 - outdated
+- vulnerability
 
 **Use more than one tag has "PR" mark when you're making Pull Requests.**
 If you need more, please make an issue with 'newLabel.'
