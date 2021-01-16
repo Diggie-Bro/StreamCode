@@ -2,7 +2,7 @@
 
 <a><img src="https://img.shields.io/badge/process-Prototyping-red"></a>
 <a href="https://travis-ci.com/github/Diggie-Bro/StreamCode"><img src="https://travis-ci.com/Diggie-Bro/StreamCode.svg?branch=main"></a>
-<a href="https://www.cplusplus.com"><img src="https://img.shields.io/badge/language->=C++-blue"></a>
+<a href="https://www.cplusplus.com"><img src="https://img.shields.io/badge/language->=C++11-blue"></a>
 <a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-Apache 2.0-pink"></a>
 
 StreamCode is an open-source programming language that is **Stream-friendly** and simple to use.
