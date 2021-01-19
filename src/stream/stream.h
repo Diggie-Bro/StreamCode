@@ -37,7 +37,9 @@ class Stream {
 
         // connnect proc_n to proc_node (push)
         void ConnectProc(Process* proc_n) {
-            proc_node_->proc_next = proc_n;
+            Process* node_std = proc_node_;
+            while(node_std->perf_func_next_ != NULL) node_std = node_std->perf_func_next_;
+            node_std->perf_func_next_ = perf_func_n;
         }
 };
 
