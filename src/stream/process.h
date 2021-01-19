@@ -66,7 +66,9 @@ class Process {
         
         // connect perf_func_n to perf_func_node_ (push)
         void ConnectPerform(PerformFunction* perf_func_n) {
-            perf_func_node_->perf_func_next_ = perf_func_n;
+            PerformFunction* node_std = perf_func_node_;
+            while(node_std->perf_func_next_ != NULL) node_std = node_std->perf_func_next_;
+            node_std->perf_func_next_ = perf_func_n;
         }
 };
 #endif
